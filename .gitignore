@@ -1,0 +1,29 @@
+# ===== Secrets / credentials - NEVER commit =====
+kaggle.json
+.env
+
+# ===== Dataset: raw and processed data stay local =====
+# (large files + CC BY 4.0 data is redistributed via its sources, not git)
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# ===== Downloaded archives =====
+*.zip
+*.parquet
+
+# ===== Python =====
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# ===== OS / editor noise =====
+Thumbs.db
+.DS_Store
+
+# ===== Scratch files created during setup =====
+_*.txt

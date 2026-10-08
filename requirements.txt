@@ -1,0 +1,18 @@
+# ============================================================
+# Medicinal Plant Identification from Leaves - dependencies
+# Install with:  pip install -r requirements.txt
+# Validated with Python 3.12 (Python 3.10+ should work)
+# ============================================================
+
+# --- Required: used by scripts/explore_dataset.py ---
+pillow>=10.0        # image loading, corruption checks, dimensions
+matplotlib>=3.7     # class distribution chart (reports/class_distribution.png)
+
+# --- Optional: only for the HuggingFace parquet route ---
+# The script download_dataset.py --source hf saves .parquet shards.
+# scripts/explore_dataset.py uses pyarrow (if installed) to inspect them.
+# pyarrow>=14.0
+
+# --- Optional: only if you prefer the official Kaggle CLI ---
+# Our download script works without it (pure standard library).
+# kaggle>=1.6
